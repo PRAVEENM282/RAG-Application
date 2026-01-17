@@ -8,21 +8,7 @@ A production-grade, full-stack Retrieval-Augmented Generation system featuring:
 
 ## Architecture
 
-```ascii
-Frontend (React) <-> WebSocket <-> Backend API (FastAPI)
-                                      |
-                                  RAG Service
-                                      |
-       +------------------+-----------+-----------+
-       |                  |                       |
-  LLM Provider      Context Builder         Vector Store
-       |                                          ^
-       v                                          |
-  (OpenAI/Groq)                                   |
-                                                  |
-Ingestion Flow:                                   |
-Upload -> API -> Redis Queue -> Worker -> Chunk -> Embed -> ChromaDB
-```
+For detailed architecture documentation, see [ARCHITECTURE.md](ARCHITECTURE.md).
 
 ## Quick Start
 
