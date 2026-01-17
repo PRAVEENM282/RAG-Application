@@ -1,0 +1,19 @@
+version: 1.0
+project_name: enterprise-rag-system
+author: PRAVEENM282
+stack:
+  backend: FastAPI
+  frontend: React
+  database: ChromaDB
+  queue: Redis
+  ai_providers:
+    - OpenAI
+    - Groq
+    - Gemini
+    - Local
+architecture_pattern: Clean Architecture (Ports & Adapters)
+features:
+  - real_time_streaming
+  - decoupled_ingestion
+  - pluggable_providers
+  - dockerized
